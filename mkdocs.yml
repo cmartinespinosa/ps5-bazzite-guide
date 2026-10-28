@@ -22,11 +22,38 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - navigation.instant
     - navigation.footer
     - navigation.top
     - content.code.copy
     - search.highlight
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          site_name: Guía PS5 Bazzite
+          site_description: Guía paso a paso para usar Bazzite en una PS5, desde una consola de serie hasta un sistema de juego afinado.
+          nav_translations:
+            Home: Inicio
+            1. Requirements: 1. Requisitos
+            2. Firmware update: 2. Actualizar el firmware
+            3. Jailbreak: 3. Jailbreak
+            4. PS5 settings: 4. Ajustes de la PS5
+            5. Boot USB: 5. USB de arranque
+            6. Install to the M.2: 6. Instalar en el M.2
+            7. First boot: 7. Primer arranque
+            8. Decky and plugins: 8. Decky y plugins
+            9. Autoloader: 9. Autoloader
+            10. Updating: 10. Actualizar
+            11. Troubleshooting: 11. Solución de problemas
 
 markdown_extensions:
   - admonition
