@@ -1,0 +1,55 @@
+site_name: PS5 Bazzite Guide
+site_description: Step-by-step guide to running Bazzite on a PS5, from a stock console to a tuned gaming setup.
+site_url: https://cmartinespinosa.github.io/ps5-bazzite-guide/
+repo_url: https://github.com/cmartinespinosa/ps5-bazzite-guide
+repo_name: cmartinespinosa/ps5-bazzite-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - 1. Requirements: 01-requirements.md
+  - 2. Firmware update: 02-firmware.md
+  - 3. Jailbreak: 03-jailbreak.md
+  - 4. PS5 settings: 04-ps5-settings.md
+  - 5. Boot USB: 05-boot-usb.md
+  - 6. Install to the M.2: 06-install-m2.md
+  - 7. First boot: 07-first-boot.md
+  - 8. Decky and plugins: 08-decky-plugins.md
+  - 9. Autoloader: 09-autoloader.md
+  - 10. Updating: 10-updating.md
+  - 11. Troubleshooting: 11-troubleshooting.md
